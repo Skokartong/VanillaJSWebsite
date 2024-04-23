@@ -1,0 +1,158 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em;
+  gap: 2em;
+  height: fit-content;
+}
+
+.portfolio-title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  padding-top: 1em;
+  margin-bottom: 0.2em;
+  font-size: 2rem;
+}
+
+.portfolio-title h2 span {
+  color: #9142f8;
+}
+
+.portfolio-title i {
+  margin-right: 0.5em;
+}
+
+.modal-1,
+.modal-2,
+.modal-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+  height: 7em;
+  border-radius: 50%;
+  box-shadow: 5px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-1 {
+  background-size: cover;
+  background-image: url(./Images/bank.png);
+}
+
+.modal-2 {
+  background-size: cover;
+  background-image: url(./Images/school.png);
+}
+
+.modal-3 {
+  background-size: cover;
+  background-image: url(./Images/music.png);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3em;
+  background: #fff;
+  width: 80vw;
+  max-width: 600px;
+  transition: all 0.8s ease-in-out;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.popup .close:hover {
+  color: #ffffff;
+}
+
+.popup .close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 3em;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.popup p {
+  font-size: 1.5rem;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.button {
+  font-size: 1.5em;
+  padding: 0.3em;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  background-color: #9142f8;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  box-shadow: 5px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+  background: #000000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup .content {
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 800px) {
+  .modal-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

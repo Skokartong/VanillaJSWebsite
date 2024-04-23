@@ -1,0 +1,28 @@
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#about .about-me {
+  margin: 3em;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+#about h1 {
+  font-size: 2rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+.about-me hr {
+  margin-bottom: 0.5em;
+}
+
+.about-me p {
+  margin: 0.5em;
+  text-align: justify;
+}

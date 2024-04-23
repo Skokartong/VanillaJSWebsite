@@ -1,0 +1,118 @@
+#experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.experience-title h2 {
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 0.1em;
+  color: black;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.skills ul li {
+  list-style: none;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 2em;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 45%;
+}
+
+.education li span {
+  color: #9142f8;
+  font-weight: 600;
+}
+
+.chas img {
+  width: 4rem;
+  margin: 0;
+}
+
+.chas li {
+  margin-top: 0;
+  list-style: none;
+}
+
+.chas h2,
+.backend h2,
+.frontend h2 {
+  margin: 0;
+}
+
+.experience-title hr {
+  display: flex;
+  border: none;
+  height: 0.3em;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 0;
+  margin-right: 15em;
+  width: 6em;
+}
+
+.backend a i,
+.frontend a i {
+  font-size: 2em;
+}
+
+.backend ul,
+.frontend ul {
+  margin-top: 0.2rem;
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.backend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-right: 0.5em;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 40%;
+}
+
+.frontend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  .education {
+    width: 50vw;
+  }
+
+  .skills {
+    width: 80vw;
+  }
+}
